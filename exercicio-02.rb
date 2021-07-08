@@ -16,7 +16,7 @@ puts "* Quantos minutos há em uma década?"
 decada = 10
 min_horas = 60
 min_decada = decada * horas_ano * min_horas 
-puts "1 década possui " + min_decada.to_s + " horas."
+puts "1 década possui " + min_decada.to_s + " minutos."
 puts ""
 
 puts "* Qual é a sua idade em segundos?"
