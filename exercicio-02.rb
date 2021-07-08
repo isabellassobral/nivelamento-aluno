@@ -5,7 +5,6 @@
 # - quantos chocolates você pretende comer na vida?
 # - Se minha idade é de 1232 milhões de segundos, qual é minha idade em anos?
 
-
 puts "* Quantas horas há em um ano?"
 dias_ano = 365
 horas_dia = 24 
