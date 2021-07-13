@@ -16,7 +16,7 @@ end
 
 #FUNÇÃO PARA CALCULAR COMPRIMENTO
 def calc_comprimento_circulo(raio)
-    comprimento = raio * 2 * Math::PI
+    comprimento = calc_diametro_circulo(raio) * Math::PI
     return comprimento
 end
 

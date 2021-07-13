@@ -56,7 +56,7 @@ puts "50 anos equivalem à " + segundos.to_s + " segundos."
 
 #FUNÇÃO
 def quant_anos_seg(segundos)
-    anos_seg = segundos / 60 / 60 / 24 / 365
+    anos_seg = segundos / 60.0 / 60 / 24 / 365
     return anos_seg
 end
 
