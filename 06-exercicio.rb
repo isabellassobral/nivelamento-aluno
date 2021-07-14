@@ -57,15 +57,15 @@ def fase_pandemica(v, t, o)
     else 
 
         if v < 0 || v > 1
-            return "v inválido"
+            return 1
         end
 
         if o < 0 || o > 1
-            return "o inválido"
+            return 2
         end
 
-        if t < 0 
-            return "t inválido"
+        if t < 0
+            return 3
         end
 
     end
@@ -91,13 +91,13 @@ puts
 
 cor_da_fase = fase_pandemica(v, t, o)
 
-if cor_da_fase == "v inválido"
+if cor_da_fase == 1
     puts "* Taxa de vacinação inválida, por favor, digite um valor de 0 à 1."
 
-elsif cor_da_fase == "o inválido"
+elsif cor_da_fase == 2
     puts "* Taxa de ocupação inválida, por favor, digite um valor de 0 à 1."
 
-elsif cor_da_fase == "t inválido"
+elsif cor_da_fase == 3
     puts "* Fator de transmissão inválido, por favor, digite um valor maior ou igual à 0."
 
 else
