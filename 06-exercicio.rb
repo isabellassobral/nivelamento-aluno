@@ -58,14 +58,13 @@ def fase_pandemica(v, t, o)
 
         if v < 0 || v > 1
             return 1
-        end
 
-        if o < 0 || o > 1
+        elsif o < 0 || o > 1
             return 2
-        end
 
-        if t < 0
+        elsif t < 0
             return 3
+
         end
 
     end
