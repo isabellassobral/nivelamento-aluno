@@ -19,16 +19,8 @@ chute = gets.chomp
 if chute.to_i < 0 || chute.to_i > 100 
     puts "Seu número é inválido. Por favor, digite um número entre 0 e 100."
 
-elsif chute.to_i == 0
-    if chute == "0"
-        if chute.to_i == numero
-            puts "Parabéns, você acertou! :D"
-        else
-            puts "Que pena, você errou... :("
-        end
-    else 
+elsif chute.to_i == 0 && chute != "0"
         puts "Você não digitou um número. Por favor, digite um número entre 0 e 100."
-    end
 
 elsif numero == chute.to_i
     puts "Parabéns, você acertou! :D"
@@ -37,4 +29,3 @@ else
     puts "Que pena, você errou... :("
 
 end
-
