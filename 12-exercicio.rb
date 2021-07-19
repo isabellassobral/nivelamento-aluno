@@ -10,16 +10,21 @@ def insere_no_array(array, valor, posicao_alvo)
             n = n-1
         end
         array[posicao_alvo] = valor
-        puts array
         return true
     end
-    puts "Essa posição não existe neste array."
     return false
 end
 
 array = [5, 8, 10, 9]
-puts insere_no_array(array, 3, 0)
-puts insere_no_array(array, 7, 20)
-puts insere_no_array(array, 4, 3)
+
+if insere_no_array(array, 4, 3) == true
+    puts "O elemento foi inserido com sucesso no array:"
+    print array
+else 
+    puts "A posição indicada não existe neste array."
+end
+    
+# puts insere_no_array(array, 3, 0)
+# puts insere_no_array(array, 7, 20)
 
 
