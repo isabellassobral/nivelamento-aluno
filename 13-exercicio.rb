@@ -12,7 +12,6 @@ def remove_da_posicao(array, posicao_alvo)
             end
         end
         return novo_array
-    else
     end
     return array
 end
