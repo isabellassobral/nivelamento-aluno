@@ -47,13 +47,11 @@ end
 def embaralhador(baralho)
     embaralhado = []
     e = 0
-    n = 0
-    while n < baralho.size
+    while e < baralho.size
         b = rand(0..baralho.size-1)
         if existe_no_array(embaralhado, baralho[b]) == false
             embaralhado[e] = baralho[b]
             e += 1
-            n += 1
         end
     end
     return embaralhado
