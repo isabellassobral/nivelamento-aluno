@@ -15,7 +15,7 @@ def mediana(array)
     if n % 2 != 0 #ímpar
         mediana = array_ordenado[(n/2).truncate(0)]
     elsif n % 2 == 0 #par
-        mediana = ((array_ordenado[(n/2)] + array_ordenado[((n/2)-1)]) / 2 ).truncate(0)
+        mediana = ((array_ordenado[(n/2)] + array_ordenado[((n/2)-1)]) / 2. )
     end
     return mediana
 end

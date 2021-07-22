@@ -2,7 +2,7 @@
 #     puts(calcula_media([1, 2, -1, 3, 0, 7]))  # deve imprimir 2.0
 
 def calcula_media(array)
-    soma = 0
+    soma = 0.0
     for n in (0..array.size-1)
         soma = soma + array[n]
     end

@@ -5,9 +5,16 @@
 
 def menor_maior(array)
     novo_array = []
+    maior = array[0]
+    menor = array[0]
     for n in (0..array.size-1)
-      
+        if array[n] > maior 
+            maior = array[n]
+        elsif array[n] < menor
+            menor = array[n]
+        end
     end
+    novo_array = [menor, maior]
     return novo_array
 end
 
