@@ -5,9 +5,9 @@ def altura_escada(altura)
     array_strings = []
 
     if altura >= 1
-        for linhas in (0..altura)
-            for colunas in (0..linhas)
-                array_strings[linhas] = "_"*colunas + "#"*linhas
+        for linhas in (1..altura)
+            for colunas in (1..linhas)
+                array_strings[linhas] = "_"*(altura-linhas) + "#"*linhas
             end
         end
         return array_strings
@@ -40,3 +40,5 @@ puts(altura_escada(3))
 # #####
  puts(altura_escada(0))
 # # deve imprimir nada, pois tem que retornar um array vazio
+
+puts(altura_escada(20))
