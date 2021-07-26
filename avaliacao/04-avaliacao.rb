@@ -14,26 +14,20 @@
 # Valide a altura inicial (que não pode ser zero ou menor) e a quantidade de ciclos (que não pode ser negativo). Caso a validação falhar, a função deve retornar nil.
 
 def altura_arvore_utopica(altura_inicial, ciclos)
+    altura_final = altura_inicial
+
     if altura_inicial > 0 && ciclos >= 0
-        if ciclos == 0
-            altura_final = altura_inicial
-        else
             for n in (1..ciclos)
                 if n % 2 != 0
-                    altura_final = altura_inicial * 2
+                    altura_final = altura_final * 2
                 else
                     altura_final = altura_final + 1
                 end
             end            
-        end
         return altura_final
     end
     return nil
 end
-
-
-
-
 
 
 puts(altura_arvore_utopica(5, 0))
